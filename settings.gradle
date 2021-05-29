@@ -1,2 +1,7 @@
+include ':utils'
+include ':network'
+include ':libraries'
+include ':libraries'
+include ':network'
 include ':app'
 rootProject.name = "ProjetoModularizado"
