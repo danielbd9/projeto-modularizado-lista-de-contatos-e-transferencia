@@ -42,7 +42,6 @@ open class SingleLiveEvent<T> : MutableLiveData<T>() {
         value = null
     }
 
-    //pra manter a mesma estrutura do call
     @MainThread
     fun call(t: T?) {
         value = t

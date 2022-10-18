@@ -5,7 +5,7 @@ import com.mobile.projetomodularizado.di.AppModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 
-class ProjetoModularizadoApplication : Application() {
+class ProjectModuleApplication : Application() {
 
     override fun onCreate() {
         super.onCreate()
@@ -15,7 +15,7 @@ class ProjetoModularizadoApplication : Application() {
 
     private fun configureKoin() {
         startKoin {
-            androidContext(this@ProjetoModularizadoApplication)
+            androidContext(this@ProjectModuleApplication)
             modules(
                 AppModule.getModules()
             )

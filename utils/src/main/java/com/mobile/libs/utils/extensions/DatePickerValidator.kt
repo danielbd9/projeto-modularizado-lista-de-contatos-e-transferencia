@@ -12,8 +12,8 @@ internal class DatePickerValidator(
     CalendarConstraints.DateValidator {
 
     init {
-        dataMinima = inicioData(dataMinima)
-        dataMaxima = inicioData(dataMaxima)
+        dataMinima = startDate(dataMinima)
+        dataMaxima = startDate(dataMaxima)
     }
 
     override fun isValid(date: Long): Boolean {
@@ -22,7 +22,7 @@ internal class DatePickerValidator(
             add(Calendar.DAY_OF_YEAR, 1)
         }
 
-        calendar.iniciarTempo()
+        calendar.startTime()
 
         return ehMaiorOuIgualDataMinima(calendar)
     }

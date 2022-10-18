@@ -7,9 +7,9 @@ import kotlinx.coroutines.launch
 
 abstract class BaseViewModel : ViewModel() {
 
-    val showError = SingleLiveEvent<String>()
-    val state = SingleLiveEvent<State>()
-    val isLoading =
+    private val showError = SingleLiveEvent<String>()
+    private val state = SingleLiveEvent<State>()
+    private val isLoading =
         SingleLiveEvent<Boolean>()
 
     enum class State {

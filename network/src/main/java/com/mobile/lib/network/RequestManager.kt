@@ -9,7 +9,7 @@ object RequestManager {
         try {
             val response = request()
             if(response.isSuccessful) {
-                return response.body() // -> Já realiza o Parse da resposta
+                return response.body()
             }
             else {
                 val message = response.message()

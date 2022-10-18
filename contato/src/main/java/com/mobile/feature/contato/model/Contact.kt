@@ -1,6 +1,6 @@
 package com.mobile.feature.contato.model
 
-data class Contato(
+data class Contact(
     val nome: String,
     val email:String
 )

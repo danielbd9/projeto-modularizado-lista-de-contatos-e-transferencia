@@ -10,8 +10,6 @@ internal class BasicLoggerInterceptor : Interceptor {
 
         Log.d("BasicLoggerInterceptor", "Url Chamada: ${request.url.toString()}")
 
-        val response = chain.proceed(request)
-
-        return response
+        return chain.proceed(request)
     }
 }

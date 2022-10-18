@@ -1,6 +1,6 @@
 package com.mobile.projetomodularizado.di
 
-import com.mobile.feature.contato.di.ContatoModule
+import com.mobile.feature.contato.di.ContactModule
 import org.koin.core.module.Module
 
 object AppModule {
@@ -8,6 +8,6 @@ object AppModule {
         uiModule,
         dataModule,
         useCaseModule,
-        *ContatoModule.getModules()
+        *ContactModule.getModules()
     )
 }
